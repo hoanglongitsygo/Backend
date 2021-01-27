@@ -1,0 +1,4 @@
+{
+  "connectionString": "mongodb+srv://longth:Cgv@1997@cluster0.z8lqh.mongodb.net/database_tools_jnt?retryWrites=true&w=majority",
+  "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING"
+}
