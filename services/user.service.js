@@ -19,7 +19,7 @@ async function authenticate({ username, password }) {
     "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING";
   const user = await User.findOne({ username });
   if (user && bcrypt.compareSync(password, user.hash)) {
-    const token = jwt.sign({ sub: user.id }, secret, {
+    const token = jwt.sign({ sub: user }, secret, {
       expiresIn: "7d"
     });
     return {
